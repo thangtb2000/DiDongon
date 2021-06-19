@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateActivity">
+
+    <EditText
+        android:id="@+id/plUpdateId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Id"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/plUpdateAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/plUpdateName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/plUpdateName"
+        app:layout_constraintTop_toBottomOf="@+id/plUpdateName" />
+
+    <EditText
+        android:id="@+id/plUpdateGioTinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Gioi Tinh"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/plUpdateAge"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/plUpdateAge"
+        app:layout_constraintTop_toBottomOf="@+id/plUpdateAge" />
+
+    <EditText
+        android:id="@+id/plUpdateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/plUpdateId"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/plUpdateId"
+        app:layout_constraintTop_toBottomOf="@+id/plUpdateId" />
+
+    <Button
+        android:id="@+id/btnUpdateSua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="#1A69A8"
+        android:text="Update"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="@+id/plUpdateGioTinh"
+        app:layout_constraintStart_toStartOf="@+id/plUpdateGioTinh"
+        app:layout_constraintTop_toBottomOf="@+id/plUpdateGioTinh" />
+
+    <Button
+        android:id="@+id/btnUpdateCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#A81111"
+        android:text="Cancel"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="@+id/btnUpdateSua"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnUpdateSua"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdateSua" />
+</androidx.constraintlayout.widget.ConstraintLayout>

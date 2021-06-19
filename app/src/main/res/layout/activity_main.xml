@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv"
+        android:layout_width="0dp"
+        android:layout_height="363dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearch"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/plId"
+        android:layout_width="85dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Id"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/plName"
+        android:layout_width="85dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/plId"
+        app:layout_constraintStart_toEndOf="@+id/plId"
+        app:layout_constraintTop_toTopOf="@+id/plId" />
+
+    <EditText
+        android:id="@+id/plGioiTinh"
+        android:layout_width="85dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:hint="GioiTinh"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/plAge"
+        app:layout_constraintStart_toEndOf="@+id/plAge"
+        app:layout_constraintTop_toTopOf="@+id/plAge"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/plAge"
+        android:layout_width="85dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/plName"
+        app:layout_constraintStart_toEndOf="@+id/plName"
+        app:layout_constraintTop_toTopOf="@+id/plName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="91dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:text="Thêm"
+        app:backgroundTint="#1870B6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plId" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="91dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:text="Xóa"
+        app:backgroundTint="#1870B6"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAdd"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd"
+        app:layout_constraintTop_toTopOf="@+id/btnAdd"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="91dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:text="Clear"
+        app:backgroundTint="#1870B6"
+        app:layout_constraintBottom_toBottomOf="@+id/btnUpdate"
+        app:layout_constraintStart_toEndOf="@+id/btnUpdate"
+        app:layout_constraintTop_toTopOf="@+id/btnUpdate"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="91dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Sửa"
+        app:backgroundTint="#1870B6"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDelete"
+        app:layout_constraintStart_toEndOf="@+id/btnDelete"
+        app:layout_constraintTop_toTopOf="@+id/btnDelete"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/plSearch"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Tìm kiếm theo tên"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdate" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="#2196F3"
+        android:text="Tìm kiếm"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="@+id/plSearch"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/plSearch"
+        app:layout_constraintTop_toBottomOf="@+id/plSearch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
